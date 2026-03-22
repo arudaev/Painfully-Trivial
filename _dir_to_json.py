@@ -44,8 +44,8 @@ EXPLICIT_IGNORE_FOLDERS = {
     'labeled',
     # ".github",
     "docs",
-    'cv_garbage',
-    "ml_deutsche_bahn",
+    # 'cv_garbage',
+    # "ml_deutsche_bahn",
 }
 
 def parse_ignore_file(ignore_file_path):

@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="./docs/img/painfully-trivial-banner.png" alt="Painfully Trivial - ML Projects Banner" width="800"/>
+  <img src="./docs/img/painfully-trivial-banner-2.png" alt="Painfully Trivial - ML Projects Banner" width="800"/>
 </h1>
 
 <h3 align="center">🚀 Advanced Machine Learning & Computer Vision Solutions</h3>
