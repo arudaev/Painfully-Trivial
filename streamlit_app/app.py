@@ -698,26 +698,22 @@ def main():
         if st.session_state.model_loaded and st.session_state.model_metrics:
             st.markdown("### 📈 Model Stats")
             metrics = st.session_state.model_metrics
-            st.info(
-                f"""
+            st.info(f"""
             **Performance Metrics**
             - mAP@0.5: {metrics.get('metrics/mAP50(B)', 0.952):.1%}
             - Precision: {metrics.get('metrics/precision(B)', 0.928):.1%}
             - Recall: {metrics.get('metrics/recall(B)', 0.896):.1%}
-            """
-            )
+            """)
 
         # Add deployment options for cloud users
         if is_cloud:
             st.markdown("---")
             st.markdown("### 🚀 Need Live Webcam?")
-            st.markdown(
-                """
+            st.markdown("""
                 [📥 Run Locally](https://github.com/arudaev/Painfully-Trivial#quick-start)
                 
                 [🐳 Use Docker](https://github.com/arudaev/Painfully-Trivial/tree/main/streamlit_app#option-1-run-with-docker-recommended)
-                """
-            )
+                """)
 
         # Professional footer
         st.markdown("---")
@@ -812,8 +808,7 @@ def show_home_page():
     col1, col2 = st.columns([3, 2])
 
     with col1:
-        st.markdown(
-            """
+        st.markdown("""
         ### 🎯 The Challenge
 
         International students and new residents in Germany face significant challenges with the
@@ -832,8 +827,7 @@ def show_home_page():
 
         This project was **successfully graded** at TH Deggendorf and represents cutting-edge
         application of AI in solving real-world problems.
-        """
-        )
+        """)
 
     with col2:
         # Interactive waste categories
@@ -982,8 +976,7 @@ def show_detection_page():
 
             # Show warning about potential connectivity issues
             with st.expander("⚠️ Troubleshooting WebRTC Connection", expanded=False):
-                st.markdown(
-                    """
+                st.markdown("""
                     If you're experiencing connection issues:
                     - **Chrome/Edge**: Recommended browsers
                     - **Firefox**: May require additional permissions
@@ -992,8 +985,7 @@ def show_detection_page():
                     - **Firewall**: Ensure WebRTC ports are not blocked
                     
                     For best results, [run locally with Docker](https://github.com/arudaev/Painfully-Trivial#quick-start)
-                    """
-                )
+                    """)
 
             # Use the correct parameter name for video processor
             webrtc_ctx = webrtc_streamer(
@@ -1049,8 +1041,7 @@ def show_detection_page():
 
         except Exception as e:
             logger.error(f"WebRTC streaming error: {e}")
-            st.error(
-                """
+            st.error("""
                 ❌ **Live webcam connection failed**
                 
                 This typically happens due to network restrictions. Please try:
@@ -1059,8 +1050,7 @@ def show_detection_page():
                 3. Checking your browser's camera permissions
                 
                 [View setup instructions →](https://github.com/arudaev/Painfully-Trivial#camera-setup)
-                """
-            )
+                """)
 
     elif detection_mode == "Camera Snapshot":
         st.info("📸 Take a photo of a waste bin using your camera")
@@ -1305,8 +1295,7 @@ def show_detection_page():
     # Always show camera tips at the bottom, adjusted for environment
     with st.expander("📹 Camera Tips", expanded=False):
         if is_cloud:
-            st.markdown(
-                """
+            st.markdown("""
                 **For Streamlit Cloud Users:**
                 - **Camera Snapshot**: Click the camera button to take a photo
                 - **Mobile**: Works great on phones - just visit the site on your mobile browser
@@ -1315,18 +1304,15 @@ def show_detection_page():
                 **Want Live Detection?**
                 - [Use Docker (Recommended)](https://github.com/arudaev/Painfully-Trivial/tree/main/streamlit_app#option-1-run-with-docker-recommended
                 - [Run locally with pip](https://github.com/arudaev/Painfully-Trivial/tree/main/streamlit_app#option-3-local-development)
-                """
-            )
+                """)
         else:
-            st.markdown(
-                """
+            st.markdown("""
                 - **Lighting**: Ensure good lighting for better detection
                 - **Distance**: Keep bins at 1-2 meters distance
                 - **Angle**: Face the bin directly for best results
                 - **Browser**: Chrome or Edge recommended for best compatibility
                 - **Permissions**: Allow camera access when prompted
-                """
-            )
+                """)
 
 
 def show_detection_info(detection):
@@ -1538,12 +1524,10 @@ def train_model_simulation(
 
         # Update status
         with status_container:
-            st.markdown(
-                f"""
+            st.markdown(f"""
             ### 🏃 Training Progress
             **Epoch {epoch + 1}/{actual_epochs}** | **{progress * 100:.1f}% Complete**
-            """
-            )
+            """)
 
         # Update metrics
         with metrics_container:
@@ -1623,8 +1607,7 @@ def train_model_simulation(
 
     # Training complete
     st.session_state.training_active = False
-    st.success(
-        f"""
+    st.success(f"""
     🎉 **Training Complete!**
 
     Final Performance:
@@ -1632,8 +1615,7 @@ def train_model_simulation(
     - mAP@0.5:0.95: {training_history['map50_95'][-1]:.3f}
     - Precision: {training_history['precision'][-1]:.3f}
     - Recall: {training_history['recall'][-1]:.3f}
-    """
-    )
+    """)
 
     # Save options
     col1, col2, col3 = st.columns(3)
@@ -1794,8 +1776,7 @@ def show_about_page():
     )
 
     # Project overview
-    st.markdown(
-        """
+    st.markdown("""
     ### 🎓 Academic Excellence
 
     This project was developed as part of the **Computer Vision** course at
@@ -1803,8 +1784,7 @@ def show_about_page():
 
     The project demonstrates practical application of cutting-edge AI technology to solve
     real-world problems faced by international students and residents in Germany.
-    """
-    )
+    """)
 
     st.info(
         '**Why "Painfully Trivial"?** These were assigned as two straightforward homework tasks. '
@@ -1908,8 +1888,7 @@ def show_about_page():
     col1, col2 = st.columns(2)
 
     with col1:
-        st.markdown(
-            """
+        st.markdown("""
         **Computer Vision Stack**
         - 🤖 **Model**: YOLOv8 (Ultralytics)
         - 🖼️ **Dataset**: 466 manually captured images
@@ -1924,12 +1903,10 @@ def show_about_page():
         - 🎨 OpenCV
         - 📈 Weights & Biases
         - 🔴 streamlit-webrtc
-        """
-        )
+        """)
 
     with col2:
-        st.markdown(
-            """
+        st.markdown("""
         **Deployment Infrastructure**
         - 🐳 **Containerization**: Docker
         - 🚀 **CI/CD**: GitHub Actions
@@ -1944,8 +1921,7 @@ def show_about_page():
         - 🎥 WebRTC for live camera
         - 📱 Mobile-responsive design
         - 🔄 Real-time processing
-        """
-        )
+        """)
 
     st.markdown("---")
 
@@ -2168,8 +2144,7 @@ if __name__ == "__main__":
 
     except Exception as e:
         logger.error(f"Application error: {e}")
-        st.error(
-            """
+        st.error("""
             ❌ **Application Error**
             
             An unexpected error occurred. Please try:
@@ -2179,8 +2154,7 @@ if __name__ == "__main__":
             If the problem persists, please report it on [GitHub Issues](https://github.com/arudaev/Painfully-Trivial/issues).
             
             Error details: {str(e)}
-            """
-        )
+            """)
 
 
 # Additional utility functions for improved performance
