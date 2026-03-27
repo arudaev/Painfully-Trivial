@@ -1,6 +1,6 @@
 # 🗑️ Deggendorf Waste Sorting Assistant - AI-Powered Web Application
 
-[![Docker Image](https://img.shields.io/badge/Docker-ghcr.io%2Fhlexnc%2Fwaste--sorting--assistant-blue?style=for-the-badge&logo=docker)](https://github.com/HlexNC/Painfully-Trivial/pkgs/container/waste-sorting-assistant)
+[![Docker Image](https://img.shields.io/badge/Docker-ghcr.io%2Farudaev%2Fwaste--sorting--assistant-blue?style=for-the-badge&logo=docker)](https://github.com/arudaev/Painfully-Trivial/pkgs/container/waste-sorting-assistant)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.31.0-FF4B4B?style=for-the-badge&logo=streamlit)](https://streamlit.io)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Latest-00FFFF?style=for-the-badge)](https://ultralytics.com)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
@@ -9,7 +9,7 @@
 > **🏆 Our finalized Computer Vision project** from TH Deggendorf, now available as a production-ready web application. This AI-powered solution helps international students and residents properly sort waste in Germany's complex recycling system.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/HlexNC/Painfully-Trivial/main/docs/img/app-demo.gif" alt="App Demo" width="800"/>
+  <img src="https://raw.githubusercontent.com/arudaev/Painfully-Trivial/main/docs/img/app-demo.gif" alt="App Demo" width="800"/>
 </p>
 
 <p align="center">
@@ -50,10 +50,10 @@
 
 ```bash
 # Pull the latest image
-docker pull ghcr.io/hlexnc/waste-sorting-assistant:main
+docker pull ghcr.io/arudaev/waste-sorting-assistant:main
 
 # Run the container
-docker run -p 8501:8501 ghcr.io/hlexnc/waste-sorting-assistant:main
+docker run -p 8501:8501 ghcr.io/arudaev/waste-sorting-assistant:main
 
 # Access at http://localhost:8501
 ```
@@ -62,7 +62,7 @@ docker run -p 8501:8501 ghcr.io/hlexnc/waste-sorting-assistant:main
 
 ```bash
 # Clone the repository
-git clone https://github.com/HlexNC/Painfully-Trivial.git
+git clone https://github.com/arudaev/Painfully-Trivial.git
 cd Painfully-Trivial/streamlit_app
 
 # Start all services
@@ -175,8 +175,8 @@ MODEL_CACHE_DIR=/app/models
 DATA_CACHE_DIR=/app/data
 
 # GitHub Release URLs
-GITHUB_RELEASE_URL=https://api.github.com/repos/HlexNC/Painfully-Trivial/releases/tags/v1.0.0
-MODEL_DOWNLOAD_URL=https://github.com/HlexNC/Painfully-Trivial/releases/download/v1.0.0/waste_detector_best.pt
+GITHUB_RELEASE_URL=https://api.github.com/repos/arudaev/Painfully-Trivial/releases/tags/v1.0.0
+MODEL_DOWNLOAD_URL=https://github.com/arudaev/Painfully-Trivial/releases/download/v1.0.0/waste_detector_best.pt
 
 # Optional services
 REDIS_URL=redis://localhost:6379
@@ -223,7 +223,7 @@ docker-compose up -d
 
 # Deploy to cloud (example with Google Cloud Run)
 gcloud run deploy waste-sorting-assistant \
-  --image ghcr.io/hlexnc/waste-sorting-assistant:latest \
+  --image ghcr.io/arudaev/waste-sorting-assistant:latest \
   --platform managed \
   --region us-central1 \
   --allow-unauthenticated
@@ -294,8 +294,8 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
       <sub>Full-Stack Developer</sub>
     </td>
     <td align="center">
-      <a href="https://github.com/HlexNC">
-        <img src="https://github.com/HlexNC.png" width="100px;" alt="Alex"/><br />
+      <a href="https://github.com/arudaev">
+        <img src="https://github.com/arudaev.png" width="100px;" alt="Alex"/><br />
         <sub><b>Alex</b></sub>
       </a><br />
       <sub>DevOps Engineer</sub>
@@ -316,8 +316,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/HlexNC/Painfully-Trivial/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/HlexNC/Painfully-Trivial/discussions)
+- **Issues**: [GitHub Issues](https://github.com/arudaev/Painfully-Trivial/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/arudaev/Painfully-Trivial/discussions)
 - **Email**: team@painfully-trivial.dev
 
 ---
@@ -327,7 +327,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 </p>
 
 <p align="center">
-  <a href="https://github.com/HlexNC/Painfully-Trivial">
+  <a href="https://github.com/arudaev/Painfully-Trivial">
     <img src="https://img.shields.io/badge/⭐_Star_on_GitHub-181717?style=for-the-badge&logo=github" alt="Star on GitHub">
   </a>
 </p>

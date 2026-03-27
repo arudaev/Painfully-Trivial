@@ -141,8 +141,8 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=registry,ref=ghcr.io/hlexnc/waste-sorting-assistant:buildcache
-          cache-to: type=registry,ref=ghcr.io/hlexnc/waste-sorting-assistant:buildcache,mode=max
+          cache-from: type=registry,ref=ghcr.io/arudaev/waste-sorting-assistant:buildcache
+          cache-to: type=registry,ref=ghcr.io/arudaev/waste-sorting-assistant:buildcache,mode=max
           build-args: |
             BUILD_DATE=${{ github.event.repository.updated_at }}
             VCS_REF=${{ github.sha }}
@@ -161,7 +161,7 @@ jobs:
     steps:
       - name: 🔍 Extract SHA tag for Trivy
         id: extract-sha-tag
-        run: echo "TRIVY_IMAGE_TAG=ghcr.io/hlexnc/waste-sorting-assistant:sha-${GITHUB_SHA::7}" >> $GITHUB_ENV
+        run: echo "TRIVY_IMAGE_TAG=ghcr.io/arudaev/waste-sorting-assistant:sha-${GITHUB_SHA::7}" >> $GITHUB_ENV
 
       - name: 🔍 Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master

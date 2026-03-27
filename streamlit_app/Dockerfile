@@ -23,7 +23,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
 # Download models during build (optional, can be done at runtime)
 # RUN mkdir -p /app/models && \
 #     wget -O /app/models/waste_detector_best.pt \
-#     https://github.com/HlexNC/Painfully-Trivial/releases/download/v1.0.0/waste_detector_best.pt
+#     https://github.com/arudaev/Painfully-Trivial/releases/download/v1.0.0/waste_detector_best.pt
 
 # Stage 2: Production
 FROM python:3.10-slim

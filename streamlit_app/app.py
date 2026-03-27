@@ -1830,7 +1830,7 @@ def show_about_page():
                 "CI/CD & Cloud Deployment Infrastructure",
                 "Real-time Video Processing with WebRTC",
             ],
-            "github": "HlexNC",
+            "github": "arudaev",
             "linkedin": "#",
             "skills": [
                 "Python",

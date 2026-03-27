@@ -10,7 +10,7 @@ services:
         - BUILD_DATE=${BUILD_DATE:-$(date -u +'%Y-%m-%dT%H:%M:%SZ')}
         - VCS_REF=${VCS_REF:-$(git rev-parse --short HEAD)}
         - VERSION=${VERSION:-latest}
-    image: ghcr.io/hlexnc/waste-sorting-assistant:${TAG:-latest}
+    image: ghcr.io/arudaev/waste-sorting-assistant:${TAG:-latest}
     container_name: waste-sorting-assistant
     ports:
       - "${APP_PORT:-8501}:8501"
@@ -30,9 +30,9 @@ services:
       - LOG_LEVEL=${LOG_LEVEL:-INFO}
       
       # GitHub Release URLs (for model downloads)
-      - GITHUB_RELEASE_URL=https://api.github.com/repos/HlexNC/Painfully-Trivial/releases/tags/v1.0.0
-      - MODEL_DOWNLOAD_URL=https://github.com/HlexNC/Painfully-Trivial/releases/download/v1.0.0/waste_detector_best.pt
-      - DATASET_DOWNLOAD_URL=https://github.com/HlexNC/Painfully-Trivial/releases/download/v1.0.0/cv_garbage.zip
+      - GITHUB_RELEASE_URL=https://api.github.com/repos/arudaev/Painfully-Trivial/releases/tags/v1.0.0
+      - MODEL_DOWNLOAD_URL=https://github.com/arudaev/Painfully-Trivial/releases/download/v1.0.0/waste_detector_best.pt
+      - DATASET_DOWNLOAD_URL=https://github.com/arudaev/Painfully-Trivial/releases/download/v1.0.0/cv_garbage.zip
     
     volumes:
       # Persistent storage for models and data
