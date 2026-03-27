@@ -142,12 +142,6 @@ painfully-trivial/
 
 ### 1. Waste Sorting Assistant (Computer Vision)
 
-<p>
-  <a href="https://waste-sorting-assistant.streamlit.app">
-    <img src="https://img.shields.io/badge/🚀_Live_Demo-Waste_Sorting_Assistant-FF4B4B?style=for-the-badge" alt="Live Demo">
-  </a>
-</p>
-
 <details>
 <summary><b>🗑️ Click to expand project details</b></summary>
 
@@ -170,12 +164,6 @@ A real-time object detection system that:
 </details>
 
 ### 2. Deutsche Bahn Delay Predictor
-
-<p>
-  <a href="https://arudaev.github.io/ml-db-delay-paper/">
-    <img src="https://img.shields.io/badge/📄_Research_Paper-Live-blue?style=for-the-badge" alt="Research Paper">
-  </a>
-</p>
 
 <details>
 <summary><b>🚄 Click to expand project details</b></summary>
@@ -267,8 +255,8 @@ If you use this work in your research, please cite:
       💻 🎨 📱
     </td>
     <td align="center">
-      <a href="https://github.com/HlexNC">
-        <img src="https://github.com/HlexNC.png" width="100px;" alt="Alex"/><br />
+      <a href="https://github.com/arudaev">
+        <img src="https://github.com/arudaev.png" width="100px;" alt="Alex"/><br />
         <sub><b>Alex</b></sub>
       </a><br />
       💻 🚀 📝
