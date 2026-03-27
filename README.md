@@ -142,6 +142,12 @@ painfully-trivial/
 
 ### 1. Waste Sorting Assistant (Computer Vision)
 
+<p>
+  <a href="https://waste-sorting-assistant.streamlit.app">
+    <img src="https://img.shields.io/badge/🚀_Live_Demo-Waste_Sorting_Assistant-FF4B4B?style=for-the-badge" alt="Live Demo">
+  </a>
+</p>
+
 <details>
 <summary><b>🗑️ Click to expand project details</b></summary>
 
