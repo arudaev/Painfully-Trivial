@@ -118,6 +118,7 @@ painfully-trivial/
 ├── 📁 ml_deutsche_bahn/          # ML Regression Project
 │   ├── 📄 1-Machine-Learning-v2.py
 │   └── 📁 data/
+├── 📁 ml_db_paper_web/           # Published Quarto research paper (submodule)
 ├── 📁 streamlit_app/             # Streamlit Demo App
 │   ├── 📄 app.py
 │   ├── 📄 pages/
@@ -154,6 +155,12 @@ A real-time object detection system that:
 </details>
 
 ### 2. Deutsche Bahn Delay Predictor
+
+<p>
+  <a href="https://arudaev.github.io/ml-db-delay-paper/">
+    <img src="https://img.shields.io/badge/📄_Research_Paper-Live-blue?style=for-the-badge" alt="Research Paper">
+  </a>
+</p>
 
 <details>
 <summary><b>🚄 Click to expand project details</b></summary>
