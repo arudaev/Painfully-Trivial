@@ -17,8 +17,13 @@ ENV PATH="/opt/venv/bin:$PATH"
 COPY requirements.txt .
 
 # Install Python dependencies
+# Install PyTorch CPU-only first to avoid pulling multi-GB CUDA wheels.
+# The container has no GPU runtime; CPU torch satisfies all runtime needs.
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+    pip install --no-cache-dir \
+        torch torchvision \
+        --index-url https://download.pytorch.org/whl/cpu
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Download models during build (optional, can be done at runtime)
 # RUN mkdir -p /app/models && \
