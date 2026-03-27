@@ -30,8 +30,8 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-        "Get Help": "https://github.com/HlexNC/Painfully-Trivial/issues",
-        "Report a bug": "https://github.com/HlexNC/Painfully-Trivial/issues/new",
+        "Get Help": "https://github.com/arudaev/Painfully-Trivial/issues",
+        "Report a bug": "https://github.com/arudaev/Painfully-Trivial/issues/new",
         "About": """
         # Deggendorf Waste Sorting Assistant
 
@@ -57,7 +57,7 @@ def add_meta_tags():
     app_url = "https://waste-sorting-assistant.streamlit.app"
 
     # Thumbnail URL
-    thumbnail_url = "https://raw.githubusercontent.com/HlexNC/Painfully-Trivial/main/docs/img/app-screenshot.png"
+    thumbnail_url = "https://raw.githubusercontent.com/arudaev/Painfully-Trivial/main/docs/img/app-screenshot.png"
 
     meta_tags = f"""
     <meta property="og:title" content="{app_title}" />
@@ -232,7 +232,7 @@ if "detection_enabled" not in st.session_state:
 
 # Constants
 GITHUB_RELEASE_URL = (
-    "https://api.github.com/repos/HlexNC/Painfully-Trivial/releases/tags/v1.0.0"
+    "https://api.github.com/repos/arudaev/Painfully-Trivial/releases/tags/v1.0.0"
 )
 MODEL_PATH = "models/waste_detector_best.pt"
 DATASET_PATH = "data/cv_garbage.zip"
@@ -713,9 +713,9 @@ def main():
             st.markdown("### 🚀 Need Live Webcam?")
             st.markdown(
                 """
-                [📥 Run Locally](https://github.com/HlexNC/Painfully-Trivial#quick-start)
+                [📥 Run Locally](https://github.com/arudaev/Painfully-Trivial#quick-start)
                 
-                [🐳 Use Docker](https://github.com/HlexNC/Painfully-Trivial/tree/main/streamlit_app#option-1-run-with-docker-recommended)
+                [🐳 Use Docker](https://github.com/arudaev/Painfully-Trivial/tree/main/streamlit_app#option-1-run-with-docker-recommended)
                 """
             )
 
@@ -724,7 +724,7 @@ def main():
         st.markdown(
             """
         <div style='text-align: center; padding: 1rem;'>
-            <a href='https://github.com/HlexNC/Painfully-Trivial' target='_blank'>
+            <a href='https://github.com/arudaev/Painfully-Trivial' target='_blank'>
                 <img src='https://img.shields.io/badge/GitHub-View_Project-181717?style=for-the-badge&logo=github' />
             </a>
         </div>
@@ -927,7 +927,7 @@ def show_detection_page():
                     "- 🖼️ **Upload Image** for existing photos\n"
                     "- 🎥 **Upload Video** for recorded videos\n\n"
                     "**For Live Webcam:** [Run the app locally]"
-                    "(https://github.com/HlexNC/Painfully-Trivial/tree/main/streamlit_app"
+                    "(https://github.com/arudaev/Painfully-Trivial/tree/main/streamlit_app"
                     "#option-1-run-with-docker-recommended)"
                 )
                 st.info(live_webcam_note)
@@ -991,7 +991,7 @@ def show_detection_page():
                     - **VPN**: Disable VPN if experiencing issues
                     - **Firewall**: Ensure WebRTC ports are not blocked
                     
-                    For best results, [run locally with Docker](https://github.com/HlexNC/Painfully-Trivial#quick-start)
+                    For best results, [run locally with Docker](https://github.com/arudaev/Painfully-Trivial#quick-start)
                     """
                 )
 
@@ -1058,7 +1058,7 @@ def show_detection_page():
                 2. Running the app locally for full webcam support
                 3. Checking your browser's camera permissions
                 
-                [View setup instructions →](https://github.com/HlexNC/Painfully-Trivial#camera-setup)
+                [View setup instructions →](https://github.com/arudaev/Painfully-Trivial#camera-setup)
                 """
             )
 
@@ -1313,8 +1313,8 @@ def show_detection_page():
                 - **Best Practice**: Take clear, well-lit photos of bins from 1-2 meters away
                 
                 **Want Live Detection?**
-                - [Use Docker (Recommended)](https://github.com/HlexNC/Painfully-Trivial/tree/main/streamlit_app#option-1-run-with-docker-recommended
-                - [Run locally with pip](https://github.com/HlexNC/Painfully-Trivial/tree/main/streamlit_app#option-3-local-development)
+                - [Use Docker (Recommended)](https://github.com/arudaev/Painfully-Trivial/tree/main/streamlit_app#option-1-run-with-docker-recommended
+                - [Run locally with pip](https://github.com/arudaev/Painfully-Trivial/tree/main/streamlit_app#option-3-local-development)
                 """
             )
         else:
@@ -1806,6 +1806,14 @@ def show_about_page():
     """
     )
 
+    st.info(
+        '**Why "Painfully Trivial"?** These were assigned as two straightforward homework tasks. '
+        "They weren't. What started as routine exercises grew into production systems: a live CV app "
+        "with a custom-trained YOLOv8 model, and an ML pipeline trained on 2M+ records with a "
+        "[published research paper](https://arudaev.github.io/ml-db-delay-paper/). "
+        "*Trivial* in name only."
+    )
+
     st.markdown("---")
 
     # Team section with professional cards
@@ -2114,7 +2122,7 @@ def show_about_page():
     with col1:
         st.markdown(
             """
-        <a href='https://github.com/HlexNC/Painfully-Trivial' target='_blank' style='text-decoration: none;'>
+        <a href='https://github.com/arudaev/Painfully-Trivial' target='_blank' style='text-decoration: none;'>
             <img src='https://img.shields.io/badge/⭐_Star_on_GitHub-181717?style=for-the-badge&logo=github' />
         </a>
         """,
@@ -2124,7 +2132,7 @@ def show_about_page():
     with col2:
         st.markdown(
             """
-        <a href='https://github.com/HlexNC/Painfully-Trivial/fork' target='_blank' style='text-decoration: none;'>
+        <a href='https://github.com/arudaev/Painfully-Trivial/fork' target='_blank' style='text-decoration: none;'>
             <img src='https://img.shields.io/badge/🍴_Fork_Project-181717?style=for-the-badge&logo=github' />
         </a>
         """,
@@ -2134,7 +2142,7 @@ def show_about_page():
     with col3:
         st.markdown(
             """
-        <a href='https://github.com/HlexNC/Painfully-Trivial/issues/new' target='_blank' style='text-decoration: none;'>
+        <a href='https://github.com/arudaev/Painfully-Trivial/issues/new' target='_blank' style='text-decoration: none;'>
             <img src='https://img.shields.io/badge/💡_Contribute-181717?style=for-the-badge&logo=github' />
         </a>
         """,
@@ -2168,7 +2176,7 @@ if __name__ == "__main__":
             1. Refreshing the page
             2. Clearing your browser cache
             3. Checking your internet connection
-            If the problem persists, please report it on [GitHub Issues](https://github.com/HlexNC/Painfully-Trivial/issues).
+            If the problem persists, please report it on [GitHub Issues](https://github.com/arudaev/Painfully-Trivial/issues).
             
             Error details: {str(e)}
             """

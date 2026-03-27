@@ -6,7 +6,7 @@
 <h3 align="center">Deutsche Bahn Delay Prediction | Waste Sorting Assistant</h3>
 
 <p align="center">
-  <a href="https://github.com/HlexNC/Painfully-Trivial">
+  <a href="https://github.com/arudaev/Painfully-Trivial">
     <img src="https://img.shields.io/badge/GitHub-Painfully_Trivial-181717?style=for-the-badge&logo=github" alt="GitHub Badge">
   </a>
   <a href="https://www.python.org/downloads/release/python-3100/">
@@ -49,6 +49,12 @@
 
 > [!NOTE]
 > Both projects were developed by Sameer, Fares, and Alex as part of the Machine Learning course and have been successfully graded by the university.
+
+## 🤔 Why the name?
+
+These projects were assigned as two straightforward academic exercises. They weren't.
+
+What started as routine homework tasks grew into something else entirely: a live computer vision app with a custom-trained YOLOv8 model deployed on Streamlit Cloud, and a regression pipeline backed by 2M+ Deutsche Bahn records with a [published research paper](https://arudaev.github.io/ml-db-delay-paper/). Docker, CI/CD, WebRTC, the works. *Trivial* in name only.
 
 ## 🌟 Live Demo
 
@@ -93,7 +99,7 @@ nvidia-smi
 
 ```bash
 # Clone the repository
-git clone https://github.com/HlexNC/Painfully-Trivial.git
+git clone https://github.com/arudaev/Painfully-Trivial.git
 cd painfully-trivial
 
 # TODO
@@ -229,7 +235,7 @@ If you use this work in your research, please cite:
   year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/HlexNC/Painfully-Trivial}}
+  howpublished = {\url{https://github.com/arudaev/Painfully-Trivial}}
 }
 ```
 
