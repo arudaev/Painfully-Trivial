@@ -62,6 +62,9 @@ What started as routine homework tasks grew into something else entirely: a live
   <a href="https://waste-sorting-assistant.streamlit.app">
     <img src="https://img.shields.io/badge/🚀_Live_Demo-Waste_Sorting_Assistant-FF4B4B?style=for-the-badge" alt="Live Demo">
   </a>
+  <a href="https://arudaev.github.io/ml-db-delay-paper/">
+    <img src="https://img.shields.io/badge/📄_Research_Paper-DB_Delay_Predictor-0057B8?style=for-the-badge" alt="ML Research Paper">
+  </a>
 </p>
 
 > [!TIP]
