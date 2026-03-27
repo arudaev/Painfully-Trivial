@@ -36,19 +36,15 @@ RUN apt-get update && apt-get install -y \
     libxrender-dev \
     libgomp1 \
     libglu1-mesa \
-    libgl1-mesa-glx \
+    libgl1 \
     libgtk-3-0 \
     libnspr4 \
     libnss3 \
-    libxss1 \
-    libasound2 \
+    libasound2t64 \
     fonts-liberation \
-    libappindicator3-1 \
     xdg-utils \
     wget \
     ffmpeg \
-    libsm6 \
-    libxext6 \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy virtual environment from builder
