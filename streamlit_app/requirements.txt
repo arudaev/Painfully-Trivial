@@ -1,0 +1,19 @@
+# Core streamlit app
+streamlit>=1.31.0
+
+# Computer vision & ML
+opencv-python-headless
+ultralytics>=8.0.0
+torch>=2.0.0
+av>=10.0.0
+streamlit-webrtc>=0.46.0
+
+# Data
+numpy
+pandas
+
+# Visualization
+plotly
+
+# HTTP / general
+requests

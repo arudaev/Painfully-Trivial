@@ -1,0 +1,3 @@
+[submodule "ml_db_paper_web"]
+	path = ml_db_paper_web
+	url = https://github.com/arudaev/ml-db-delay-paper.git

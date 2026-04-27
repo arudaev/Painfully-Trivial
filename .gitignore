@@ -1,3 +1,17 @@
 .venv
+venv
 /DBtrainrides.csv
 /YOLO_Dataset
+yolov8s.pt
+yolo11n.pt
+runs
+/cv_garbage/raw_images
+/cv_garbage/labeled_images
+/cv_garbage/YOLO_Dataset
+/cv_garbage/models
+/cv_garbage/results
+/cv_garbage/labeled  
+__pycache__
+*coverage*
+output.json
+streamlit_app/models/waste_detector_best.pt
